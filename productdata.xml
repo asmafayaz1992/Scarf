@@ -1,0 +1,50 @@
+<products>
+<product>
+<website_id>5</website_id>
+<sku>ENC-HP334-NEWS</sku>
+<model_id>334</model_id>
+<manufacturer>HP</manufacturer>
+<model>Compaq 8000 Elite</model>
+<model_additional>Desktop</model_additional>
+<hdd>160GB</hdd>
+<hdd_type>Standard</hdd_type>
+<chassis>Low Profile Desktop</chassis>
+<colour>BLACK</colour>
+<memory>1 x 2GB</memory>
+<total_memory>2</total_memory>
+<graphics>a:1:{i:0;s:47:"4 Series Chipset Integrated Graphics Controller";}</graphics>
+<qty>1</qty>
+<category>PC</category>
+<cpu>Intel Core2 Quad CPU Q9505 @ 2.83GHz</cpu>
+<cpu_count>Single Processor</cpu_count>
+<generation>2</generation>
+<series>i7</series>
+<ram_upgrade>1</ram_upgrade>
+<hdd_upgrade>1</hdd_upgrade>
+<screensize>0</screensize>
+<price>160</price>
+<cost>35</cost>
+<mpn>
+</mpn>
+<asin>
+</asin>
+<ean>
+</ean>
+<ean_id>
+</ean_id>
+<brand>HP</brand>
+<attribute_set>9</attribute_set>
+<description>&lt;p&gt;These superb HP Compaq 8000 Elite machines come complete with an Intel Core2 Quad CPU Q9505 @ 2.83GHz processor, 2GB of memory and a 160GB hard drive as standard.&lt;/p&gt;&lt;p&gt;Each PC comes with Windows 10 pre-installed, along with a recovery partition so that if  your computer should ever start running slowly, you can restore it back to how it left our facility.&lt;/p&gt;&lt;p&gt;Your computer comes with a 90 Day Return to Base Warranty, so in the unlikely event that a fault occurs within your first three months, we will send a courier to collect your machine from you, repair/replace any faulty components and return the device back to you (once repaired) using a next day courier service at no extra cost.&lt;/p&gt;</description>
+<image>/media/import/hp/compaq-8000-elite.png</image>
+<name>HP Compaq 8000 Elite -  Core2 Quad Q9505 2.83GHz - 160GB Hard Drive - 2GB Memory</name>
+<amazonName>Refurbished HP Compaq 8000 Elite  Core2 Quad Q9505 2.83GHz - 160GB - 2GB</amazonName>
+<amz_bullet1>160GB hard drive and 2 RAM</amz_bullet1>
+<amz_bullet2>Professionally Refurbished</amz_bullet2>
+<amz_bullet3>Microsoft Windows 10</amz_bullet3>
+<amz_bullet4>Built in recovery partition to allow you to reinstall Windows if required</amz_bullet4>
+<amz_bullet5>3 Months Return to Base Warranty and Support</amz_bullet5>
+<amz_node>428651031</amz_node>
+<ebay_category>179</ebay_category>
+<ebay_store_category>3670369012</ebay_store_category>
+</product>
+</products>

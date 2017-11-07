@@ -1,0 +1,83 @@
+XML Data styled in HTML/CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table</title>
+    <script>
+        window.addEventListener("load", function() {
+            getRows();
+        });
+
+        function getRows() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("get", "productdata.xml", true);
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 40 && this.status == 200) {
+                    showResult(this);
+                }
+            };
+            xmlhttp.send(null);
+        }
+
+        function showResult(xmlhttp) {
+            var xmlDoc = xmlhttp.responseXML.documentElement;
+            removeWhitespace(xmlDoc);
+            var outputResult = document.getElementById("BodyRows");
+            var rowData = xmlDoc.getElementsByTagName("Products");
+
+            addTableRowsFromXmlDoc(rowData,outputResult);
+        }
+
+        function addTableRowsFromXmlDoc(xmlNodes,tableNode) {
+            var theTable = tableNode.parentNode;
+            var newRow, newCell, i;
+            for (i=0; i<xmlNodes.length; i++) {
+                newRow = tableNode.insertRow(i);
+                newRow.className = (i%2) ? "OddRow" : "EvenRow";
+                for (j=0; j<xmlNodes[i].childNodes.length; j++) {
+                    newCell = newRow.insertCell(newRow.cells.length);
+                    newCell.innerHTML = xmlNodes[i].childNodes[j].firstChild.nodeValue;
+                }
+            }
+            theTable.appendChild(tableNode);
+        }
+
+        function removeWhitespace(xml) {
+            var loopIndex;
+            for (loopIndex = 0; loopIndex < xml.childNodes.length; loopIndex++)
+            {
+                var currentNode = xml.childNodes[loopIndex];
+                if (currentNode.nodeType == 1)
+                {
+                    removeWhitespace(currentNode);
+                }
+                if (!(/\S/.test(currentNode.nodeValue)) && (currentNode.nodeType == 3))
+                {
+                    xml.removeChild(xml.childNodes[loopIndex--]);
+                }
+            }
+        }
+
+    </script>
+    <style>
+        table {
+        }
+        td {
+            padding: 2px;
+            border: 1px solid #dadada;
+        }
+        .EvenRow {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+<table id="MainTable">
+    <tbody id="BodyRows"></tbody>
+</table>
+</body>
+</html>
+        
